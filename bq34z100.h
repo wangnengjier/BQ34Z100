@@ -21,6 +21,43 @@ public:
     int getStatus();//returns the flags
     int getRemaining();
     int getFlags();
+
+    uint16_t getVoltage2(); //returns the battery voltage
+    uint8_t getMaxError();
+    int getFlags2(();
+    uint16_t getAverageTimeToEmty();
+    uint16_t getAverageTimeToFull();
+    int getPassedCharge();
+    uint16_t getDoD0Time();
+    uint16_t getavailableEnergy();
+    uint16_t getAverragePower();
+    uint16_t getSerialNumber();
+    uint16_t getInternal_Temperature();
+    uint16_t getCycleCount();
+    uint16_t getStateOfHealth();
+    int getChargeVoltage();
+    int getChargeCurrent();
+    int getPackConfiguration();
+    int getDesingCapacity();
+    int getDataFlashClass();
+    int getDataFlashBlock();
+    int getAuthenticate();
+    int getAuthenticateCheckSum();
+    int getBlockData();
+    int getBlockDataCheckSum();
+    int getBlockDataControl();
+    int getGridNumber();
+    int getLearnedStatus();
+    int getDoD();
+    int getQStart();
+    int getTrueRC();
+    int getTrueFCC();
+    int getStateTime();
+    int getQmaxPassedQ();
+    uint16_t getDoD0();
+    int getQmaxDoD0();
+    int getQmaxTime();
+
     int readControl(uint8_t,uint8_t);
     int readInstantCurrent();
     bool readFlash(uint16_t , uint8_t );
