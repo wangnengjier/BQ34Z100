@@ -128,6 +128,144 @@ int bq34z100::getFlags()
     temp = temp | (Wire.read() << 8);
     return temp;
 }
+uint16_t getVoltage2(); //returns the battery voltage
+{
+    return read(0x09, 2);
+}
+uint8_t getMaxError();
+{
+    return read(0x03, 1);
+}
+//    int getFlags2(();
+uint16_t getAverageTimeToEmty();
+{
+    return read(0x18,2);
+}
+uint16_t getAverageTimeToFull();
+{
+    return read(0x1a,2);
+}
+int getPassedCharge();
+{
+    return read(0x1c,2);
+}
+uint16_t getDoD0Time();
+{
+    return read(0x1e,2);
+}
+uint16_t getavailableEnergy();
+{
+    return read(0x24,2);
+}
+uint16_t getAverragePower();
+{
+    return read(0x26,2);
+}
+uint16_t getSerialNumber();
+{
+    return read(0x28,2);
+}
+uint16_t getInternal_Temperature();
+{
+    return read(0x2a,2);
+}
+uint16_t getCycleCount();
+{
+    return read(0x2c,2);
+}
+uint16_t getStateOfHealth();
+{
+    return read(0x2e,2);
+}
+int getChargeVoltage();
+{
+    return read(0x30,2);
+}
+int getChargeCurrent();
+{
+    return read(0x32,2);
+}
+int getPackConfiguration();
+{
+    return read(0x3a,2);
+}
+int getDesingCapacity();
+{
+    return read(0x3c,2);
+}
+int getDataFlashClass();
+{
+    return read(0x3e,2);
+}
+int getDataFlashBlock();
+{
+    return read(0x3f,2);
+}
+int getAuthenticate();
+{
+    return read(0x40,2);
+}
+int getAuthenticateCheckSum();
+{
+    return read(0x54,2);
+}
+int getBlockData();
+{
+    return read(0x55,2);
+}
+int getBlockDataCheckSum();
+{
+    return read(0x60,2);
+}
+int getBlockDataControl();
+{
+    return read(0x61,1);
+}
+int getGridNumber();
+{
+    return read(0x62,1);
+}
+int getLearnedStatus();
+{
+    return read(0x63,1);
+}
+int getDoD();
+{
+    return read(0x64,2);
+}
+int getQStart();
+{
+    return read(0x66,2);
+}
+int getTrueRC();
+{
+    return read(0x68,2);
+}
+int getTrueFCC();
+{
+    return read(0x6a,2);
+}
+int getStateTime();
+{
+    return read(0x6c,2);
+}
+int getQmaxPassedQ();
+{
+    return read(0x6e,2);
+}
+uint16_t getDoD0();
+{
+    return read(0x70,2);
+}
+int getQmaxDoD0();
+{
+    return read(0x72,2);
+}
+int getQmaxTime();
+{
+    return read(0x74,2);
+}
+
 void bq34z100::reset()
 {
     Wire.beginTransmission(BQ34Z100);
