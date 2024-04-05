@@ -20,41 +20,42 @@ getCurrent	KEYWORD2
 getFlags	KEYWORD2
 getRemaining	KEYWORD2
 
-    uint16_t getVoltage2(); //returns the battery voltage
-    uint8_t getMaxError();
-    int getFlags2(();
-    uint16_t getAverageTimeToEmty();
-    uint16_t getAverageTimeToFull();
-    int getPassedCharge();
-    uint16_t getDoD0Time();
-    uint16_t getavailableEnergy();
-    uint16_t getAverragePower();
-    uint16_t getSerialNumber();
-    uint16_t getInternal_Temperature();
-    uint16_t getCycleCount();
-    uint16_t getStateOfHealth();
-    int getChargeVoltage();
-    int getChargeCurrent();
-    int getPackConfiguration();
-    int getDesingCapacity();
-    int getDataFlashClass();
-    int getDataFlashBlock();
-    int getAuthenticate();
-    int getAuthenticateCheckSum();
-    int getBlockData();
-    int getBlockDataCheckSum();
-    int getBlockDataControl();
-    int getGridNumber();
-    int getLearnedStatus();
-    int getDoD();
-    int getQStart();
-    int getTrueRC();
-    int getTrueFCC();
-    int getStateTime();
-    int getQmaxPassedQ();
-    uint16_t getDoD0();
-    int getQmaxDoD0();
-    int getQmaxTime();
+getVoltage2  KEYWORD2
+getMaxError  KEYWORD2
+getFlags  KEYWORD2
+getFlags2  KEYWORD2
+getAverageTimeToEmty  KEYWORD2
+getAverageTimeToFull  KEYWORD2
+getPassedCharge  KEYWORD2
+getDoD0Time  KEYWORD2
+getavailableEnergy  KEYWORD2
+getAverragePower  KEYWORD2
+getSerialNumber  KEYWORD2
+getInternal_Temperature  KEYWORD2
+getCycleCount  KEYWORD2
+getStateOfHealth  KEYWORD2
+getChargeVoltage  KEYWORD2
+getChargeCurrent  KEYWORD2
+getPackConfiguration  KEYWORD2
+getDesingCapacity  KEYWORD2
+getDataFlashClass  KEYWORD2
+getDataFlashBlock  KEYWORD2
+getAuthenticate  KEYWORD2
+getAuthenticateCheckSum  KEYWORD2
+getBlockData  KEYWORD2
+getBlockDataCheckSum  KEYWORD2
+getBlockDataControl  KEYWORD2
+getGridNumber  KEYWORD2
+getLearnedStatus  KEYWORD2
+getDoD  KEYWORD2
+getQStart  KEYWORD2
+getTrueRC  KEYWORD2
+getTrueFCC  KEYWORD2
+getStateTime  KEYWORD2
+getQmaxPassedQ  KEYWORD2
+getDoD0  KEYWORD2
+getQmaxDoD0  KEYWORD2
+getQmaxTime  KEYWORD2
 
 readControl	KEYWORD2
 readInstantCurrent	KEYWORD2
